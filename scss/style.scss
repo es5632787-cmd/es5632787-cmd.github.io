@@ -274,3 +274,31 @@ $enable-shadows: false;
     min-width: 0 !important;
 }
 
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+/* Overlay del texto */
+.portfolio-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* Texto dentro del overlay */
+.portfolio-item .overlay small {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Efecto hover */
+.portfolio-item:hover .overlay {
+    background: rgba(0, 0, 0, 0.85);
+}
